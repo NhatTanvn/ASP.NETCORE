@@ -1,0 +1,19 @@
+﻿@model List<ToyBrand> 
+<!--preference-->
+<div class="left-side">
+    <h3 class="agileits-sear-head">Occasion</h3>
+    <ul>
+        
+        @foreach (var item in Model)
+         {
+                <li>
+                    @Html.CheckBox(item.CBrandName, false, new { @class = "checked" })
+                    <span class="span">@item.CBrandName</span>
+                </li>
+          }
+          
+          
+        
+       
+    </ul>
+</div>

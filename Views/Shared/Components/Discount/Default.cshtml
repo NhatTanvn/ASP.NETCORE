@@ -1,0 +1,14 @@
+﻿@model int[]
+<!-- Discount-->
+<div class="left-side">
+    <h3 class="agileits-sear-head">Discount</h3>
+    <ul>
+        @foreach (var items in Model)
+        {
+        <li>
+            @Html.CheckBox(items.ToString(), false, new { @class = "checked" })
+            <span class="span">@items% or more</span>
+        </li>
+        }
+    </ul>
+</div>

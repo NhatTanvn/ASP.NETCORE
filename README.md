@@ -1,0 +1,2 @@
+# ASP.NETCORE
+ my project
